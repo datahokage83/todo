@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     GetTodos();
     console.log(todos);
-  }, [])
+  }, [todos])
 
   const GetTodos = () => {
     fetch(API_BASE + "/todos")
